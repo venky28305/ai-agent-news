@@ -7,8 +7,8 @@ from langchain.prompts import PromptTemplate
 
 # Load environment variables
 load_dotenv()
-GOOGLE_API_KEY = st.secrets("GOOGLE_API_KEY")
-NEWS_API_KEY = st.secrets("NEWS_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+NEWS_API_KEY = st.secrets["NEWS_API_KEY"]
 
 # Initialize Gemini
 llm = GoogleGenerativeAI(model="models/gemini-1.5-flash", api_key=GOOGLE_API_KEY)
